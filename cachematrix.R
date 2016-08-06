@@ -1,8 +1,8 @@
 ## These functions cache previous calculated inverse of a matrix to avoid 
 ## possible time-consuming computations.
 
-## Creates a matrix and returns a list containing functions
-## to manage and update the matrix' for inversr caching
+## Creates a list of functions to manage and update the matrix' 
+## for inverse caching computations.
 
 makeCacheMatrix <- function(x = matrix()) {
     myInv <- NULL
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Checks if the matrix list has a cached value of the matrix. If it 
 ## does, return the cached value. If not, calculate the inverse
-## of the matrix via the solve function and cache (or store) the 
+## of the matrix via the solve function and caches (or stores) the 
 ## inverse value for the next call.
 
 cacheSolve <- function(x) {
